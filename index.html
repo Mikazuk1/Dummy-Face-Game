@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Face Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Game Mode Selection -->
+    <div class="mode-selection">
+        <h1>Dummy Face Game</h1>
+        <h2>Choose Game Mode</h2>
+        <div class="mode-buttons">
+            <button id="vs-friend" class="mode-btn">Play with Friend</button>
+            <button id="vs-ai" class="mode-btn">Play with AI</button>
+        </div>
+    </div>
+
+    <!-- Picture Selection Screen -->
+    <div class="game-setup hide">
+        <h1 id="select-header">Select Your Pictures</h1>
+        <div class="selection-container">
+            <h3 id="player-turn">Player X - Choose your picture</h3>
+            <div class="image-pool">
+                <img src="png/baby-ponce.png" class="selectable">
+                <img src="png/dura.png" class="selectable">
+                <img src="png/edmund.png" class="selectable">
+                <img src="png/jerrold.png" class="selectable">
+                <img src="png/linao.png" class="selectable">
+                <img src="png/magaway.png" class="selectable">
+                <img src="png/pecision.png" class="selectable">
+                <img src="png/ponce.png" class="selectable">
+            </div>
+        </div>
+    </div>
+
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn">New Game</button>
+    </div>
+
+    <main class="hide">
+        <h1>Dummy Face Game</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset">Reset Game</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
